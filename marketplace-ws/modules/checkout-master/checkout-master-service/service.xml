@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.4.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_4_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.marketplace.checkout.master">
+	<namespace>marketplace_checkout</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+<entity local-service="true" name="CheckoutCustom" table="marketplace_checkout"
+		remote-service="false" uuid="false">
+		<!-- PK fields -->
+		<column name="checkoutCustomId" primary="true" type="long" />
+		<column name="commerceOrderId" type="long" />
+		<column name="requestJson" type="String" />
+		<column name="responseJson" type="String" />
+		<column name="module" type="String" />
+		<column name="createDate" type="Date" />
+		
+	</entity>
+</service-builder>

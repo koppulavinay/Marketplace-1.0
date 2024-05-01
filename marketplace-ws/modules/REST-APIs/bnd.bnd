@@ -1,0 +1,4 @@
+Bundle-Name: REST-APIs
+Bundle-SymbolicName: com.marketplace.rest.apis
+Bundle-Version: 1.0.0
+Liferay-Configuration-Path: /configuration

@@ -1,0 +1,11 @@
+dependencies {
+	compile project(":modules:product-spec-value-map:product-spec-value-map-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+}
+
+buildService {
+	apiDir = "../product-spec-value-map-api/src/main/java"
+}
+
+group = "com.marketplace.product.spec.value.map"

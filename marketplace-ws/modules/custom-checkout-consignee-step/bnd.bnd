@@ -1,0 +1,6 @@
+Bundle-Name: custom-checkout-consignee-step
+Bundle-SymbolicName: com.marketplace.custom.checkout.consignee.step
+Bundle-Version: 1.0.0
+Web-ContextPath: /custom-checkout-consignee-step
+Import-Package: *;'resolution:'=optional
+Export-Package: com.marketplace.custom.checkout.model

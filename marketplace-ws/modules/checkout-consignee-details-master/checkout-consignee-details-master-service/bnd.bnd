@@ -1,0 +1,6 @@
+Bundle-Name: checkout-consignee-details-master-service
+Bundle-SymbolicName: com.marketplace.checkout.consignee.service
+Bundle-Version: 1.0.0
+Liferay-Require-SchemaVersion: 1.0.0
+Liferay-Service: true
+-dsannotations-options: inherit

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.marketplace.checkout.master.model.CheckoutCustom">
+		<field name="checkoutCustomId" type="long" />
+		<field name="commerceOrderId" type="long" />
+		<field name="requestJson" type="String" />
+		<field name="responseJson" type="String" />
+		<field name="module" type="String" />
+		<field name="createDate" type="Date" />
+	</model>
+</model-hints>

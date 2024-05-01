@@ -1,0 +1,5 @@
+Bundle-Name: category-view
+Bundle-SymbolicName: com.marketplace.category.view
+Bundle-Version: 1.0.0
+Export-Package: com.marketplace.category.constants
+Web-ContextPath: /category-view

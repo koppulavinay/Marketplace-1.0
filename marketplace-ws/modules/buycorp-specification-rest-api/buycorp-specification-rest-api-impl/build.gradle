@@ -1,0 +1,30 @@
+dependencies {
+	compile project(":modules:buycorp-specification-rest-api:buycorp-specification-rest-api-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+
+	restBuilder group: "com.liferay", name: "com.liferay.portal.tools.rest.builder", version: "1.0.222"
+	
+	compileOnly project(":modules:specification-master:specification-master-api")
+	compileOnly project(":modules:specification-master:specification-master-service")
+	
+	compileOnly project(":modules:specifications-value-master:specifications-value-master-api")
+	compileOnly project(":modules:specifications-value-master:specifications-value-master-service")
+	
+	compileOnly project(":modules:specification-category-map:specification-category-map-api")
+	compileOnly project(":modules:specification-category-map:specification-category-map-service")
+	
+	compileOnly project(":modules:specification-field-type:specification-field-type-api")
+	compileOnly project(":modules:specification-field-type:specification-field-type-service")
+	
+	compileOnly project(":modules:specification-field-data-type:specification-field-data-type-api")
+	compileOnly project(":modules:specification-field-data-type:specification-field-data-type-service")
+	
+	compileOnly project(":modules:specification-value-uoms:specification-value-uoms-api")
+	compileOnly project(":modules:specification-value-uoms:specification-value-uoms-service")
+	
+	compileOnly project(":modules:category-master:category-master-api")
+	compileOnly project(":modules:category-master:category-master-service")
+}
+
+group = "buycorp.specification.rest.api"

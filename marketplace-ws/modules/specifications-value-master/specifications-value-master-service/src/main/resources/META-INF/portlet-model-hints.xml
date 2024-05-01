@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.marketplace.specifications.value.master.model.SpecificationValue">
+		<field name="uuid" type="String" />
+		<field name="specificationValueId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="specificationId" type="long" />
+		<field name="specificationValueLabel" type="String" />
+		<field name="specificationUOM" type="String" />
+		<field name="ipAddress" type="String" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="createdBy" type="long" />
+		<field name="modifiedBy" type="long" />
+	</model>
+</model-hints>

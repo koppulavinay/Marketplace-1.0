@@ -1,0 +1,19 @@
+dependencies {
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+
+	cssBuilder group: "com.liferay", name: "com.liferay.css.builder", version: "3.1.0"
+	
+	compileOnly project(":modules:brand-master:brand-master-api")
+	compileOnly project(":modules:brand-master:brand-master-service")
+	
+	compileOnly project(":modules:category-master:category-master-api")
+	compileOnly project(":modules:category-master:category-master-service")
+	
+	compileOnly project(":modules:brand-category-map:brand-category-map-api")
+	compileOnly project(":modules:brand-category-map:brand-category-map-service")
+	
+	compileOnly project(":modules:brand-document-master:brand-document-master-api")
+	compileOnly project(":modules:brand-document-master:brand-document-master-service")
+	
+	implementation group: 'xerces', name: 'xercesImpl', version: '2.12.0'
+}

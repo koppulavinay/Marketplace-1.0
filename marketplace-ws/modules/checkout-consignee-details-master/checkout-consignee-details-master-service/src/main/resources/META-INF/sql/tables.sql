@@ -1,0 +1,23 @@
+create table marketplace_consigneedetails (
+	uuid_ VARCHAR(75) null,
+	checkoutConsigneeId LONG not null primary key,
+	groupId LONG,
+	companyId LONG,
+	userId LONG,
+	userName VARCHAR(75) null,
+	createdBy LONG,
+	modifiedBy LONG,
+	createDate DATE null,
+	modifiedDate DATE null,
+	parentCartId LONG,
+	orderItemId LONG,
+	shippingConsigneeId VARCHAR(75) null,
+	shipConsigneeJson STRING null,
+	shipConsigneeAddressID VARCHAR(75) null,
+	shipConsigneeAddressJson STRING null,
+	billingConsigneeId VARCHAR(75) null,
+	billConsigneeJson STRING null,
+	billConsigneeAddressId VARCHAR(75) null,
+	billConsigneeAddressJson STRING null,
+	quantity LONG
+);

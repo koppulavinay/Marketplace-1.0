@@ -1,0 +1,11 @@
+Bundle-Name: web-services-bridge
+Bundle-SymbolicName: com.marketplace.web.services.api
+Bundle-Version: 1.0.0
+Export-Package: \
+	com.marketplace.ws.api,\
+	com.marketplace.ws.response.consignee.details,\
+	com.marketplace.ws.response.organization.details,\
+	com.marketplace.ws.response.user.org.details,\
+	com.marketplace.ws.response.user.profile,\
+    com.marketplace.ws.impl,\
+Import-Package: *;'resolution:'=optional

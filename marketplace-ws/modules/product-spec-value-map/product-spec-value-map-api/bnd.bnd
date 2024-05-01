@@ -1,0 +1,10 @@
+Bundle-Name: product-spec-value-map-api
+Bundle-SymbolicName: com.marketplace.product.spec.value.map.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.marketplace.product.spec.value.map.exception,\
+	com.marketplace.product.spec.value.map.model,\
+	com.marketplace.product.spec.value.map.service,\
+	com.marketplace.product.spec.value.map.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../product-spec-value-map-service/service.xml

@@ -1,0 +1,10 @@
+Bundle-Name: checkout-consignee-details-master-api
+Bundle-SymbolicName: com.marketplace.checkout.consignee.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.marketplace.checkout.consignee.exception,\
+	com.marketplace.checkout.consignee.model,\
+	com.marketplace.checkout.consignee.service,\
+	com.marketplace.checkout.consignee.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../checkout-consignee-details-master-service/service.xml

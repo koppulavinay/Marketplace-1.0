@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.marketplace.product.specifications.master.model.ProductSpecification">
+		<field name="uuid" type="String" />
+		<field name="productSpecificationId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="specificationId" type="long" />
+		<field name="specificationLabel" type="String" />
+		<field name="specificationFieldType" type="String" />
+		<field name="draftProductId" type="long" />
+		<field name="isMandatory" type="boolean" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createdBy" type="long" />
+		<field name="modifiedBy" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="ipAddress" type="String" />
+	</model>
+</model-hints>

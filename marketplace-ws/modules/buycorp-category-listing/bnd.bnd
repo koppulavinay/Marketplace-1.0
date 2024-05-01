@@ -1,0 +1,4 @@
+Bundle-Name: buycorp-category-listing
+Bundle-SymbolicName: com.marketplace.category.listing
+Bundle-Version: 1.0.0
+Export-Package: com.marketplace.category.listing.constants

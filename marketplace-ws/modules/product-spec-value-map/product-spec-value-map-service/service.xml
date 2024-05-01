@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.4.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_4_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.marketplace.product.spec.value.map">
+	<namespace>marketplace_productspecvaluemap</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+	<entity local-service="true" name="ProductSpecValueMap" table="marketplace_product_spec_value"
+		remote-service="false" uuid="true">
+
+		<!-- PK fields -->
+		<column name="productSpecValueId" primary="true" type="long" />
+
+		<!-- Group instance -->
+		<column name="groupId" type="long" />
+		
+		<!-- Other fields -->
+		<column name="productSpecificationId" type="long" />
+		<column name="specificationValueLabelId" type="long" />
+		<column name="specificationValueLabel" type="String" />
+		<column name="specificationValueUOM" type="String" />
+
+		<!-- Audit fields -->
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createdBy" type="long" />
+		<column name="modifiedBy" type="long" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+		<column name="ipAddress" type="String" />
+		
+		<!-- Finders -->
+		<finder return-type="Collection" name="productSpecificationId">
+			<finder-column name="productSpecificationId" />
+		</finder>
+		
+		<finder return-type="ProductSpecValueMap" name="ProductSpecIdNSpecValueId">
+			<finder-column name="productSpecificationId"></finder-column>
+			<finder-column name="specificationValueLabelId"></finder-column>
+		</finder>
+
+		<!-- References -->
+		<reference entity="WorkflowInstanceLink" package-path="com.liferay.portal" />
+		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
+		<reference entity="AssetLink" package-path="com.liferay.portlet.asset" />
+		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />
+		
+	</entity>
+</service-builder>

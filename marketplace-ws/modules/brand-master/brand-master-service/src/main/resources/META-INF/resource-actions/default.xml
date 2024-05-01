@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resource-action-mapping PUBLIC "-//Liferay//DTD Resource Action  
+Mapping 7.4.0//EN" "http://www.liferay.com/dtd/liferay-resource-action-mapping_7_4_0.dtd">
+
+
+<resource-action-mapping>
+<model-resource>
+    <model-name>com.marketplace.brand</model-name>
+    <portlet-ref>
+        <portlet-name>com_marketplace_brand_BrandViewPortlet</portlet-name>
+    </portlet-ref>
+    <root>true</root>
+		<weight>1</weight>
+    <permissions>
+        <supports>
+            <action-key>CREATE_BRAND</action-key>
+            <action-key>UPDATE_BRAND</action-key>
+            <action-key>REVIEW_BRAND</action-key>
+		    <action-key>VIEW_BRAND</action-key>
+        </supports>
+        <guest-unsupported/>
+    </permissions>
+</model-resource>
+<model-resource>
+    <model-name>com.marketplace.brand.model.Brand</model-name>
+    <portlet-ref>
+        <portlet-name>com_marketplace_brand_BrandViewPortlet</portlet-name>
+    </portlet-ref>
+    
+		<weight>1</weight>
+    <permissions>
+        <supports>
+            <action-key>CREATE_BRAND</action-key>
+            <action-key>UPDATE_BRAND</action-key>
+            <action-key>REVIEW_BRAND</action-key>
+		    <action-key>VIEW_BRAND</action-key>
+        </supports>
+        <guest-unsupported/>
+    </permissions>
+</model-resource>
+</resource-action-mapping>

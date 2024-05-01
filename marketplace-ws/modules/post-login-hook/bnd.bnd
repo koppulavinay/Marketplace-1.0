@@ -1,0 +1,18 @@
+Bundle-Name: post-login-hook
+Bundle-SymbolicName: post.login.hook
+Bundle-Version: 1.0.0
+Export-Package: post.login.hook.constants
+-privatepackage: \
+	com.nimbusds.*,\
+	net.jcip.annotations.*,\
+	net.minidev.json.*,\
+	org.bouncycastle.*,\
+	junit.*,\
+	org.junit.*,\
+	org.hamcrest.*,\
+	com.liferay.portal.kernel.security.sso.*,\
+	com.google.*,\
+	net.minidev.*,\
+	net.minidev.asm.*,\
+
+	

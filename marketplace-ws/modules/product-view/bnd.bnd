@@ -1,0 +1,5 @@
+Bundle-Name: product-view
+Bundle-SymbolicName: com.marketplace.product.view
+Bundle-Version: 1.0.0
+Export-Package: com.marketplace.product.view.constants
+Import-Package: *;'resolution:'=optional

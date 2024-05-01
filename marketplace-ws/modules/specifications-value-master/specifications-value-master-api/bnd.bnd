@@ -1,0 +1,10 @@
+Bundle-Name: specifications-value-master-api
+Bundle-SymbolicName: com.marketplace.specifications.value.master.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.marketplace.specifications.value.master.exception,\
+	com.marketplace.specifications.value.master.model,\
+	com.marketplace.specifications.value.master.service,\
+	com.marketplace.specifications.value.master.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../specifications-value-master-service/service.xml

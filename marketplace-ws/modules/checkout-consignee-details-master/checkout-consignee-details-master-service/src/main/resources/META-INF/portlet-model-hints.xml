@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.marketplace.checkout.consignee.model.CheckoutConsigneeDetails">
+		<field name="uuid" type="String" />
+		<field name="checkoutConsigneeId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createdBy" type="long" />
+		<field name="modifiedBy" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="parentCartId" type="long" />
+		<field name="orderItemId" type="long" />
+		<field name="shippingConsigneeId" type="String" />
+		<field name="shipConsigneeJson" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="shipConsigneeAddressID" type="String" />
+		<field name="shipConsigneeAddressJson" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="billingConsigneeId" type="String" />
+		<field name="billConsigneeJson" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="billConsigneeAddressId" type="String" />
+		<field name="billConsigneeAddressJson" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="quantity" type="long" />
+	</model>
+</model-hints>

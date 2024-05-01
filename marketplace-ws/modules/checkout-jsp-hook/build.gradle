@@ -1,0 +1,5 @@
+dependencies {
+	
+	compileOnly project(":modules:custom-checkout-consignee-step")
+	
+}

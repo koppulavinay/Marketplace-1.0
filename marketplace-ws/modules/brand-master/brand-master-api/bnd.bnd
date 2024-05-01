@@ -1,0 +1,10 @@
+Bundle-Name: brand-master-api
+Bundle-SymbolicName: com.marketplace.brand.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.marketplace.brand.exception,\
+	com.marketplace.brand.model,\
+	com.marketplace.brand.service,\
+	com.marketplace.brand.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../brand-master-service/service.xml

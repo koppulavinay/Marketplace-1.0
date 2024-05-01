@@ -1,0 +1,4 @@
+dependencies {
+	compile project(":modules:product-master:product-master-api")
+	compile project(":modules:web-services-bridge")
+}

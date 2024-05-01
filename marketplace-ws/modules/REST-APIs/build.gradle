@@ -1,0 +1,16 @@
+dependencies {
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+	compileOnly group: "org.osgi", name: "org.osgi.service.jaxrs"
+	
+	compileOnly project(":modules:category-master:category-master-api")
+	compileOnly project(":modules:category-master:category-master-service")
+	
+	compileOnly project(":modules:brand-master:brand-master-api")
+	compileOnly project(":modules:brand-master:brand-master-service")
+	
+	compileOnly project(":modules:brand-category-map:brand-category-map-api")
+	compileOnly project(":modules:brand-category-map:brand-category-map-service")
+	
+	compileOnly project(":modules:brand-document-master:brand-document-master-api")
+	compileOnly project(":modules:brand-document-master:brand-document-master-service")
+}

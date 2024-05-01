@@ -1,0 +1,11 @@
+dependencies {
+	compile project(":modules:specification-master:specification-master-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+}
+
+buildService {
+	apiDir = "../specification-master-api/src/main/java"
+}
+
+group = "com.marketplace.specification.master"

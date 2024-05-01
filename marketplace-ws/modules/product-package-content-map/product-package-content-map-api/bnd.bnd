@@ -1,0 +1,10 @@
+Bundle-Name: product-package-content-map-api
+Bundle-SymbolicName: com.marketplace.product.pkg.content.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.marketplace.product.pkg.content.exception,\
+	com.marketplace.product.pkg.content.model,\
+	com.marketplace.product.pkg.content.service,\
+	com.marketplace.product.pkg.content.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../product-package-content-map-service/service.xml

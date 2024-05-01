@@ -1,0 +1,11 @@
+dependencies {
+	compile project(":modules:specification-category-map:specification-category-map-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+}
+
+buildService {
+	apiDir = "../specification-category-map-api/src/main/java"
+}
+
+group = "com.marketplace.specification.category.map"

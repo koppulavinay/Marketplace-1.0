@@ -1,0 +1,4 @@
+Bundle-Name: pre-logout-hook
+Bundle-SymbolicName: pre.logout.hook
+Bundle-Version: 1.0.0
+Export-Package: pre.logout.hook.constants

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.marketplace.product.variant.master.model.ProductVariant">
+		<field name="uuid" type="String" />
+		<field name="productVariantId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="draftProductId" type="long" />
+		<field name="variantName" type="String" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="createdBy" type="long" />
+		<field name="modifiedDate" type="Date" />
+		<field name="modifiedBy" type="long" />
+		<field name="ipAddress" type="String" />
+	</model>
+</model-hints>

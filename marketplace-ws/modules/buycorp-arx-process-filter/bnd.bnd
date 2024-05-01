@@ -1,0 +1,4 @@
+Bundle-Name: buycorp-arx-process-filter
+Bundle-SymbolicName: buycorp.arx.process.filter
+Bundle-Version: 1.0.0
+Export-Package: buycorp.arx.process.filter.constants

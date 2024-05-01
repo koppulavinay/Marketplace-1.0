@@ -1,0 +1,5 @@
+Bundle-Name: commerce-cart-taglib-jsp-hook
+Bundle-SymbolicName: commerce.cart.taglib.jsp.hook
+Bundle-Version: 1.0.0
+Fragment-Host: com.liferay.commerce.cart.taglib;bundle-version="5.0.27"
+Portal-Bundle-Version: 7.4.13

@@ -1,0 +1,10 @@
+Bundle-Name: brand-category-map-api
+Bundle-SymbolicName: com.marketplace.brand.category.map.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.marketplace.brand.category.map.exception,\
+	com.marketplace.brand.category.map.model,\
+	com.marketplace.brand.category.map.service,\
+	com.marketplace.brand.category.map.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../brand-category-map-service/service.xml

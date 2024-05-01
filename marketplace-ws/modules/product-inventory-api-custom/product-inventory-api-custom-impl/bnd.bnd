@@ -1,0 +1,3 @@
+Bundle-Name: product-inventory-api-custom-impl
+Bundle-SymbolicName: com.marketplace.product.inventory.api.custom.impl
+Bundle-Version: 1.0.0

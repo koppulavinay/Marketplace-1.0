@@ -1,0 +1,12 @@
+dependencies {
+	compile project(":modules:product-inventory-api-custom:product-inventory-api-custom-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+
+	restBuilder group: "com.liferay", name: "com.liferay.portal.tools.rest.builder", version: "1.0.222"
+	
+	compileOnly project(":modules:buycorp-common-util")
+	compileOnly project(":modules:product-sku-master:product-sku-master-api")
+}
+
+group = "com.marketplace.product.inventory.api.custom"

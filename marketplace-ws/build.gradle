@@ -1,0 +1,9 @@
+// Check GETTING_STARTED.markdown for information regarding usage.
+plugins {
+  id "org.sonarqube" version "2.7"
+}
+sonarqube {
+    properties {
+		property 'sonar.exclusions', "**/buycorp/specification/rest/api/resource/v1_0/test/**"
+    }
+}

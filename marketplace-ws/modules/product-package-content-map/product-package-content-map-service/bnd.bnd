@@ -1,0 +1,6 @@
+Bundle-Name: product-package-content-map-service
+Bundle-SymbolicName: com.marketplace.product.pkg.content.service
+Bundle-Version: 1.0.0
+Liferay-Require-SchemaVersion: 1.0.0
+Liferay-Service: true
+-dsannotations-options: inherit

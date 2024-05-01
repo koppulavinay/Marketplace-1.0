@@ -1,0 +1,5 @@
+Bundle-Name: buycorp-product-compare-jsp-hook
+Bundle-SymbolicName: buycorp.product.compare.jsp.hook
+Bundle-Version: 1.0.0
+Fragment-Host: com.liferay.commerce.product.content.web;bundle-version="4.0.100"
+Portal-Bundle-Version: 7.4.13

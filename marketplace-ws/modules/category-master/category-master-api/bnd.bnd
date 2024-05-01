@@ -1,0 +1,10 @@
+Bundle-Name: category-master-api
+Bundle-SymbolicName: com.marketplace.category.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.marketplace.category.exception,\
+	com.marketplace.category.model,\
+	com.marketplace.category.service,\
+	com.marketplace.category.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../category-master-service/service.xml

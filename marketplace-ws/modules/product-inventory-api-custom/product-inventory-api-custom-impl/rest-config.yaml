@@ -1,0 +1,7 @@
+apiDir: "../product-inventory-api-custom-api/src/main/java"
+apiPackagePath: "com.marketplace.product.inventory.api.custom"
+application:
+    baseURI: "/product-inventory-api-custom"
+    className: "ProductInventoryApiCustomApplication"
+    name: "ProductInventoryApiCustom"
+author: "ashishinani"

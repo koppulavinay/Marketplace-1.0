@@ -1,0 +1,1 @@
+create index IX_59E39CC8 on marketplace_branddocument (brandId, documentId);

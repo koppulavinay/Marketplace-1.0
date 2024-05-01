@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.marketplace.specification.field.type.model.SpecFieldType">
+		<field name="uuid" type="String" />
+		<field name="specFieldTypeId" type="long" />
+		<field name="fieldTypeName" type="String" />
+	</model>
+</model-hints>

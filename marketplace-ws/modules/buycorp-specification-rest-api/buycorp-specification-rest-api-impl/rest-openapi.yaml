@@ -1,0 +1,231 @@
+info:
+  description: "BuycorpSpecificationRestApi REST API"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+  title: "BuycorpSpecificationRestApi"
+  version: v1.0
+openapi: 3.0.1
+
+paths:
+  "/get-specification/{specificationId}":
+    get:
+      operationId: getSpecificationById
+      parameters:
+        - in: path
+          name: specificationId
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        200:
+          description: "Success Response"
+        404:
+          description: "Not Found"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SpecificationObject"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/SpecificationObject"
+
+      tags: ["Specification"]
+  "/get-allspecification":
+    get:
+      operationId: getAllSpecification
+      parameters:
+        - in: query
+          name: page
+          schema:
+            type: integer
+        - in: query
+          name: pageSize
+          schema:
+            type: integer
+      responses:
+        200:
+          description: "Success Response"
+        404:
+          description: "Not Found"
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: "#/components/schemas/SpecificationObject"
+            application/xml:
+              schema:
+                items:
+                  $ref: "#/components/schemas/SpecificationObject"
+
+      tags: ["Specification"]
+  "/update-specification":
+    patch:
+      operationId: updateSpecification
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SpecificationUpdateObject"
+
+          application/xml:
+            schema:
+              $ref: "#/components/schemas/SpecificationUpdateObject"
+
+      responses:
+        200:
+          description: "Specification updated successfully"
+        404:
+          description: "Not Found"
+
+      tags: ["Specification"]
+
+  "/create-specification":
+    post:
+      operationId: createSpecification
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SpecificationCreateObject"
+
+          application/xml:
+            schema:
+              $ref: "#/components/schemas/SpecificationCreateObject"
+
+      responses:
+        200:
+          description: "Specification created successfully"
+        404:
+          description: "Not Found"
+
+      tags: ["Specification"]
+
+components:
+  schemas:
+    SpecificationObject:
+      properties:
+        specificationId:
+          type: integer
+          format: int64
+        specificationLabel:
+          type: string
+        specificationDescription:
+          type: string
+        specificationFieldType:
+          type: integer
+          format: int64
+        specificationFieldDataType:
+          type: integer
+          format: int64
+        specificationStatus:
+          type: string
+        specificationValues:
+          type: array
+          items:
+            type: object
+            properties:
+              specificationValueLabel:
+                type: string
+              specificationUOM:
+                type: string
+              specificationValueId:
+                type: integer
+                format: int64
+        status:
+          type: string
+        categories:
+          type: array
+          items:
+            type: object
+            properties:
+              categoryName:
+                type: string
+              categoryId:
+                type: integer
+                format: int64
+
+
+    SpecificationUpdateObject:
+      properties:
+        specificationId:
+          type: integer
+          format: int64
+        specificationLabel:
+          type: string
+        specificationDescription:
+          type: string
+        specificationFieldType:
+          type: integer
+          format: int64
+        specificationFieldDataType:
+          type: integer
+          format: int64
+        modifiedBy:
+          type: integer
+          format: int64
+        categories:
+          type: array
+          items:
+            type: object
+            properties:
+              categoryId:
+                type: integer
+                format: int64
+              categoryName:
+                type: string
+              iscategorymandatory:
+                type: boolean
+        specificationValues:
+          type: array
+          items:
+            type: object
+            properties:
+              specificationValueLabel:
+                type: string
+              specificationUOM:
+                type: string
+              specificationvalueId:
+                type: integer
+                format: int64
+
+    SpecificationCreateObject:
+      properties:
+        specificationLabel:
+          type: string
+        specificationDescription:
+          type: string
+        specificationFieldType:
+          type: integer
+          format: int64
+        specificationFieldDataType:
+          type: integer
+          format: int64
+        modifiedBy:
+          type: integer
+          format: int64
+        categories:
+          type: array
+          items:
+            type: object
+            properties:
+              categoryId:
+                type: integer
+                format: int64
+              categoryName:
+                type: string
+              iscategorymandatory:
+                type: boolean
+        specificationValues:
+          type: array
+          items:
+            type: object
+            properties:
+              specificationValueLabel:
+                type: string
+              specificationUOM:
+                type: string
+              specificationValueId:
+                type: integer
+                format: int64

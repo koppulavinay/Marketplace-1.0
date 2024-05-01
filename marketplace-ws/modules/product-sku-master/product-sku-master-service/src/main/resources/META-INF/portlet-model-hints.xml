@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.marketplace.product.sku.master.model.ProductSKU">
+		<field name="uuid" type="String" />
+		<field name="productSKUId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="draftProductId" type="long" />
+		<field name="skuId" type="String" />
+		<field name="sellerSkuId" type="String" />
+		<field name="skuName" type="String" />
+		<field name="skuCreationName" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="defaultSku" type="String" />
+		<field name="basePrice" type="BigDecimal">
+			<hint name="constraint-scale">2</hint>
+		</field>
+		<field name="offerPrice" type="BigDecimal">
+			<hint name="constraint-scale">2</hint>
+		</field>
+		<field name="cost" type="BigDecimal">
+			<hint name="constraint-scale">2</hint>
+		</field>
+		<field name="margin" type="BigDecimal">
+			<hint name="constraint-scale">2</hint>
+		</field>
+		<field name="stock" type="long" />
+		<field name="uom" type="String" />
+		<field name="minimumOrderQuantity" type="long" />
+		<field name="maximumOrderQuantity" type="long" />
+		<field name="lowStockThreshold" type="long" />
+		<field name="tax" type="String" />
+		<field name="skuPublishingDate" type="Date" />
+		<field name="skuExpiryDate" type="Date" />
+		<field name="images" type="String" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="createdBy" type="long" />
+		<field name="modifiedDate" type="Date" />
+		<field name="modifiedBy" type="long" />
+		<field name="ipAddress" type="String" />
+	</model>
+</model-hints>

@@ -1,0 +1,3 @@
+Bundle-Name: product-api-custom-impl
+Bundle-SymbolicName: com.marketplace.product.api.custom.impl
+Bundle-Version: 1.0.0

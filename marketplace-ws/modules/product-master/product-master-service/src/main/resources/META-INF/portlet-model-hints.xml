@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.marketplace.product.master.model.Product">
+		<field name="uuid" type="String" />
+		<field name="draftProductId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="brandId" type="long" />
+		<field name="categoryId" type="long" />
+		<field localized="true" name="productName" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field name="productType" type="String" />
+		<field localized="true" name="shortDescription" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field localized="true" name="longDescription" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field name="modelNumber" type="String" />
+		<field name="productStatus" type="String" />
+		<field name="stepNumber" type="long" />
+		<field name="productMappingId" type="String">
+			<hint name="max-length">30</hint>
+		</field>
+		<field name="taxCategoryId" type="long" />
+		<field name="cpDefinitionId" type="long" />
+		<field name="vendorId" type="String" />
+		<field name="vendorName" type="String" />
+		<field name="organizationId" type="String" />
+		<field name="organizationName" type="String" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createdBy" type="long" />
+		<field name="modifiedBy" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="ipAddress" type="String" />
+	</model>
+</model-hints>

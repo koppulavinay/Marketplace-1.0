@@ -1,0 +1,6 @@
+Bundle-Name: product-inventory-api-custom-api
+Bundle-SymbolicName: com.marketplace.product.inventory.api.custom.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.marketplace.product.inventory.api.custom.dto.v1_0,\
+	com.marketplace.product.inventory.api.custom.resource.v1_0

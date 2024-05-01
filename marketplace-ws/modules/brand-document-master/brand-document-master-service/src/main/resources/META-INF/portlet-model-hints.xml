@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.marketplace.brand.document.master.model.BrandDocumentUpload">
+		<field name="brandDocumentUploadId" type="long" />
+		<field name="brandId" type="long" />
+		<field name="documentId" type="long" />
+	</model>
+</model-hints>

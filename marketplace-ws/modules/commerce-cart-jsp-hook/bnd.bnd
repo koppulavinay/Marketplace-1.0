@@ -1,0 +1,6 @@
+Bundle-Name: commerce-cart-jsp-hook
+Bundle-SymbolicName: commerce.cart.jsp.hook
+Bundle-Version: 1.0.0
+Fragment-Host: com.liferay.commerce.cart.content.web;bundle-version="4.0.48"
+Portal-Bundle-Version: 7.4.13
+Import-Package: *;'resolution:'=optional

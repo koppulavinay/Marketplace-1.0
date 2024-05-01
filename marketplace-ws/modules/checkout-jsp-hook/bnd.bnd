@@ -1,0 +1,5 @@
+Bundle-Name: checkout-jsp-hook
+Bundle-SymbolicName: checkout.jsp.hook
+Bundle-Version: 1.0.0
+Fragment-Host: com.liferay.commerce.checkout.web;bundle-version="5.0.75"
+Portal-Bundle-Version: 7.4.13

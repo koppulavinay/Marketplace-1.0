@@ -1,0 +1,5 @@
+Bundle-Name: buycorp-specification-rest-api-test
+Bundle-SymbolicName: buycorp.specification.rest.api.test
+Bundle-Version: 1.0.0
+-includeresource: buycorp.specification.rest.api.client.jar=../buycorp-specification-rest-api-client/build/libs/buycorp.specification.rest.api.client-1.0.0.jar;lib:=true
+-provider-policy: ${replacestring;${range;[==,==]};.*,(.*)];$1}

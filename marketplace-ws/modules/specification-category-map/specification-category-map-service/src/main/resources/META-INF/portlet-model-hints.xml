@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.marketplace.specification.category.map.model.SpecCategoryMap">
+		<field name="uuid" type="String" />
+		<field name="specCategoryMapId" type="long" />
+		<field name="specificationId" type="long" />
+		<field name="categoryId" type="long" />
+		<field name="isCategoryMandatory" type="boolean" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="createdBy" type="long" />
+		<field name="modifiedBy" type="long" />
+		<field name="ipAddress" type="String" />
+	</model>
+</model-hints>

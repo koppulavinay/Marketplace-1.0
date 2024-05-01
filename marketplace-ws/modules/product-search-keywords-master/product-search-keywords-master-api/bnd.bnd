@@ -1,0 +1,10 @@
+Bundle-Name: product-search-keywords-master-api
+Bundle-SymbolicName: com.marketplace.product.search.keywords.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.marketplace.product.search.keywords.exception,\
+	com.marketplace.product.search.keywords.model,\
+	com.marketplace.product.search.keywords.service,\
+	com.marketplace.product.search.keywords.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../product-search-keywords-master-service/service.xml

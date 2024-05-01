@@ -1,0 +1,10 @@
+Bundle-Name: specification-value-uoms-api
+Bundle-SymbolicName: com.marketplace.specification.value.uoms.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.marketplace.specification.value.uoms.exception,\
+	com.marketplace.specification.value.uoms.model,\
+	com.marketplace.specification.value.uoms.service,\
+	com.marketplace.specification.value.uoms.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../specification-value-uoms-service/service.xml

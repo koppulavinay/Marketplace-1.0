@@ -1,0 +1,7 @@
+apiDir: "../product-api-custom-api/src/main/java"
+apiPackagePath: "com.marketplace.product.api.custom"
+application:
+    baseURI: "/product-api-custom"
+    className: "ProductApiCustomApplication"
+    name: "ProductApiCustom"
+author: "ashishinani"

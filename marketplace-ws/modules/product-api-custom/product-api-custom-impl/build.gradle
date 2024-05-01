@@ -1,0 +1,23 @@
+dependencies {
+	compile project(":modules:product-api-custom:product-api-custom-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+
+	restBuilder group: "com.liferay", name: "com.liferay.portal.tools.rest.builder", version: "1.0.222"
+	
+	compileOnly project(":modules:buycorp-common-util")
+	compileOnly project(":modules:product-sku-master:product-sku-master-api")
+	
+	compileOnly project(":modules:product-master:product-master-api")
+	compileOnly project(":modules:category-master:category-master-api")
+	compileOnly project(":modules:brand-master:brand-master-api")
+	compileOnly project(":modules:product-spec-value-map:product-spec-value-map-api")
+	compileOnly project(":modules:product-specifications-master:product-specifications-master-api")
+	compileOnly project(":modules:product-package-content-map:product-package-content-map-api")
+	compileOnly project(":modules:variant-values-master:variant-values-master-api")
+	compileOnly project(":modules:product-sku-master:product-sku-master-api")
+	compileOnly project(":modules:product-mediasku-master:product-mediasku-master-api")
+	compileOnly project(":modules:product-variant-master:product-variant-master-api")
+}
+
+group = "com.marketplace.product.api.custom"

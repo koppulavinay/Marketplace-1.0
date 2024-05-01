@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.4.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_4_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.marketplace.checkout.consignee">
+	<namespace>marketplace_consigneedetails</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+	<entity local-service="true" name="CheckoutConsigneeDetails" table="marketplace_consigneedetails" remote-service="true" uuid="true">
+
+		<!-- PK fields -->
+
+		<column name="checkoutConsigneeId" primary="true" type="long" />
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createdBy" type="long" />
+		<column name="modifiedBy" type="long" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="parentCartId" type="long" />
+		<column name="orderItemId" type="long" />
+
+		<column name="shippingConsigneeId" type="String" />
+		<column name="shipConsigneeJson" type="String" />
+
+		<column name="shipConsigneeAddressID" type="String" />
+		<column name="shipConsigneeAddressJson" type="String" />
+		
+		<column name="billingConsigneeId" type="String" />
+		<column name="billConsigneeJson" type="String" />
+
+		<column name="billConsigneeAddressId" type="String" />
+		<column name="billConsigneeAddressJson" type="String" />
+
+		<column name="quantity" type="long" />
+
+		<!-- Finder methods -->
+
+		<finder name="CartIdNOrderItemId" return-type="Collection">
+			<finder-column name="parentCartId" />
+			<finder-column name="orderItemId" />
+		</finder>
+
+		<finder name="ParentCartId" return-type="Collection">
+			<finder-column name="parentCartId" />
+		</finder>
+
+	</entity>
+</service-builder>

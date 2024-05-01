@@ -1,0 +1,7 @@
+Bundle-Name: buycorp-common-util
+Bundle-SymbolicName: com.buycorp.common.util
+Bundle-Version: 1.0.0
+Export-Package: com.buycorp.common.util
+Import-Package: \
+	,\
+	*;'resolution:'=optional

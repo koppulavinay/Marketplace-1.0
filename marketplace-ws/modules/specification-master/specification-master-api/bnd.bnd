@@ -1,0 +1,10 @@
+Bundle-Name: specification-master-api
+Bundle-SymbolicName: com.marketplace.specification.master.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.marketplace.specification.master.exception,\
+	com.marketplace.specification.master.model,\
+	com.marketplace.specification.master.service,\
+	com.marketplace.specification.master.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../specification-master-service/service.xml

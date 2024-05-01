@@ -1,0 +1,4 @@
+Bundle-Name: specification-view
+Bundle-SymbolicName: com.marketplace.specification
+Bundle-Version: 1.0.0
+Export-Package: com.marketplace.specification.constants

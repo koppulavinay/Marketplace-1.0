@@ -1,0 +1,5 @@
+dependencies {
+	
+	compileOnly project(":modules:buycorp-common-util")
+	compileOnly project(":modules:product-master:product-master-api")
+}

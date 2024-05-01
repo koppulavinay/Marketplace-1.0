@@ -1,0 +1,6 @@
+Bundle-Name: product-api-custom-api
+Bundle-SymbolicName: com.marketplace.product.api.custom.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.marketplace.product.api.custom.dto.v1_0,\
+	com.marketplace.product.api.custom.resource.v1_0

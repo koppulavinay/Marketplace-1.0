@@ -1,0 +1,4 @@
+Bundle-Name: buycorp-chatbot
+Bundle-SymbolicName: com.marketplace.chatbot
+Bundle-Version: 1.0.0
+Export-Package: com.marketplace.chatbot.constants

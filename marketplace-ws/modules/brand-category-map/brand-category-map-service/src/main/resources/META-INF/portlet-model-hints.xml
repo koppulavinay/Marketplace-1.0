@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.marketplace.brand.category.map.model.BrandCategoryMap">
+		<field name="brandCategoryMapId" type="long" />
+		<field name="brandId" type="long" />
+		<field name="categoryId" type="long" />
+	</model>
+</model-hints>

@@ -1,0 +1,38 @@
+info:
+    description: "ProductInventoryApiCustom REST API"
+    license:
+        name: "Apache 2.0"
+        url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+    title: "ProductInventoryApiCustom"
+    version: v1.0
+openapi: 3.0.1
+
+paths:
+  "/update-inventory":
+    patch:
+      operationId: updateInventory
+      requestBody:
+        content:
+          application/json:
+              schema:
+                $ref: "#/components/schemas/InventoryUpdateObject"
+                 
+          application/xml:
+              schema:
+                $ref: "#/components/schemas/InventoryUpdateObject"
+                 
+      responses:
+        200:
+          description: "Inventory updated successfully"
+        404:
+          description: "Not Found"
+
+      tags: ["Inventory"]
+      
+components:
+  schemas:
+    InventoryUpdateObject:  
+      properties:
+        commerceOrderId:
+          type: integer
+          format: int64

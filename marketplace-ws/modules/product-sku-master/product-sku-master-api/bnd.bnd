@@ -1,0 +1,10 @@
+Bundle-Name: product-sku-master-api
+Bundle-SymbolicName: com.marketplace.product.sku.master.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.marketplace.product.sku.master.exception,\
+	com.marketplace.product.sku.master.model,\
+	com.marketplace.product.sku.master.service,\
+	com.marketplace.product.sku.master.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../product-sku-master-service/service.xml

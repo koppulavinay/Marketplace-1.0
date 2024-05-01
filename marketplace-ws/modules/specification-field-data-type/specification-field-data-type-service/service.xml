@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.4.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_4_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.marketplace.specification.field.data.type">
+	<namespace>marketplace</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+	<entity local-service="true" name="SpecFieldDataType" table="marketplace_specfielddatatype" 
+		remote-service="false" uuid="true">
+
+		<!-- PK fields -->
+		<column name="specFieldDataTypeId" primary="true" type="long" />
+		<column name="fieldDataTypeName" type="String" />
+
+	</entity>
+</service-builder>

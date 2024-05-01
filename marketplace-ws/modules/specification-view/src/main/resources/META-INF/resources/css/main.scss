@@ -1,0 +1,220 @@
+.editField {
+	background-color: #fff;
+	border-width: medium;
+}
+
+.requiredStar {
+	font-size: 16px;
+	color: red;
+	line-height: 16px;
+}
+
+.toggleSwitch span span {
+  display: none;
+}
+
+label.error {
+	font-family: var(--font-family-base, system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol") !important;
+	font-weight: 400;
+    font-size: 14px !important;
+    line-height: 1.25rem;
+    margin-top: 0.188rem;
+    margin-bottom: 0;
+    width: 100%;
+    color: #CE1438;
+}
+
+.c-loader {
+	position: fixed; 
+	top: 0; 
+	left: 0;  
+	z-index: 3; 
+	width: 100%; 
+	height: 100%; 
+	background-color: rgba(0,0,0,0.5); 
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+}
+
+.c-loader span {
+	border: 5px solid #f3f3f3;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    border-top: 5px solid #555; 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+@media only screen {
+	.toggleSwitch {
+	    display: inline-block;
+	    height: 18px;
+	    position: relative;
+	    overflow: visible;
+	    padding: 0;
+	    left:-20px;
+	    margin-left: 0px;
+	    cursor: pointer;
+	    width: 40px
+	}
+	 
+	.toggleSwitch * {
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	}
+	 
+	.toggleSwitch label,
+	.toggleSwitch > span {
+		line-height: 20px;
+	    height: 20px;
+	    vertical-align: middle;
+	}
+	
+	.toggleSwitch input:focus ~ a,
+	.toggleSwitch input:focus + label {
+	    outline: none;
+	}
+	
+	.toggleSwitch label {
+	    position: relative;
+	    z-index: 3;
+	    display: block;
+	    width: 100%;
+	}
+	
+	.toggleSwitch input {
+	    position: absolute;
+	    opacity: 0;
+	    z-index: 5;
+	}
+	
+	.toggleSwitch > span {
+	    position: absolute;
+	    left: -50px;
+	    width: 100%;
+	    margin: 0;
+	    padding-right: 64px;
+	    text-align: left;
+	    white-space: nowrap;
+	}
+	
+	.toggleSwitch > span span {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    z-index: 5;
+	    display: block;
+	    width: 50%;
+	    margin-left: 50px;
+	    text-align: left;
+	    font-size: 0.9em;
+	    width: 100%;
+	    left: 7px;
+	    top: 0;
+	    opacity: 0;
+	}
+	
+	.toggleSwitch a {
+	    position: absolute;
+	    right: 50%;
+	    z-index: 4;
+	    display: block;
+	    height: 100%;
+	    padding: 0;
+	    left: 2px;
+	    width: 18px;
+	    background-color: #fff;
+	    border: 1px solid #CCC;
+	    border-radius: 100%;
+	    -webkit-transition: all 0.2s ease-out;
+	    -moz-transition: all 0.2s ease-out;
+	    transition: all 0.2s ease-out;
+	    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+	}
+	  
+	.toggleSwitch > span span:first-of-type {
+	    color: #888;
+	    opacity: 1;
+	    left: 45%;
+	}
+	
+	.toggleSwitch > span:before {
+	    content: '';
+	    display: block;
+	    width: 100%;
+	    height: 100%;
+	    position: absolute;
+	    left: 50px;
+	    top: -2px;
+	    background-color: #eee;
+	    border: 1px solid #ccc;
+	    border-radius: 30px;
+	    -webkit-transition: all 0.2s ease-out;
+	    -moz-transition: all 0.2s ease-out;
+	    transition: all 0.2s ease-out;
+	}
+	  
+	.toggleSwitch input:checked ~ a {
+	    border-color: #fff;
+	    left: 100%;
+	    margin-left: -5px;
+	}
+	  
+	.toggleSwitch input:checked ~ span:before {
+	    border-color: #0097D1;
+	    box-shadow: inset 0 0 0 30px #0097D1;
+	}
+	
+	.toggleSwitch input:checked ~ span span:first-of-type {
+	    opacity: 0;
+	}
+	
+	.toggleSwitch input:checked ~ span span:last-of-type {
+	    opacity: 1;
+	    color: #fff;
+	}
+	
+	.toggleSwitch.large {
+	    width: 60px;
+	    height: 27px;
+	}
+	
+	.toggleSwitch.large a {
+	    width: 25px;
+	    height: 25px;
+	}
+	
+	.toggleSwitch.large > span {
+	    height: 29px;
+	    line-height: 28px;
+	}
+	
+	.toggleSwitch.large input:checked ~ a {
+	    left: 41px;
+	}
+	
+	.toggleSwitch.large > span span {
+	    font-size: 14px;
+	}
+	  
+	.toggleSwitch.large > span span:first-of-type {
+	    left: 50%;
+	}
+}
+
+
+.titleBar {margin: 0 auto 15px !important; display: flex; align-items: center; justify-content: space-between;
+	.titlePage {margin-bottom: 0;}
+}
+
+.customDataTable {max-width: 800px; margin: 0 auto;
+	thead th {background: #eee;}
+}
+
+
+
+

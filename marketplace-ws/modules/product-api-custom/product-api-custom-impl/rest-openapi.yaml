@@ -1,0 +1,289 @@
+info:
+    description: "ProductApiCustom REST API"
+    license:
+        name: "Apache 2.0"
+        url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+    title: "ProductApiCustom"
+    version: v1.0
+openapi: 3.0.1
+
+paths:
+  "/update-stock":
+    patch:
+      operationId: updateStock
+      requestBody:
+        content:
+          application/json:
+              schema:
+                $ref: "#/components/schemas/StockUpdateObject"
+                 
+          application/xml:
+              schema:
+                $ref: "#/components/schemas/StockUpdateObject"
+                 
+      responses:
+        200:
+          description: "Stock updated successfully"
+        404:
+          description: "Not Found"
+
+      tags: ["Product"]
+  "/get-products":
+    post:
+      operationId: fetchProductList
+      requestBody:
+        content:
+          application/json:
+              schema:
+                $ref: "#/components/schemas/ProductIdObject"
+                 
+          application/xml:
+              schema:
+                $ref: "#/components/schemas/ProductIdObject"
+                 
+      responses:
+        200:
+          description: "Success Response"
+        404:
+          description: "Not Found"          
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProductListObject"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/ProductListObject"
+
+      tags: ["Product"]
+  "/get-specifications":
+    post:
+      operationId: fetchSpecificationList
+      requestBody:
+        content:
+          application/json:
+              schema:
+                $ref: "#/components/schemas/ProductReferenceObject"
+                 
+          application/xml:
+              schema:
+                $ref: "#/components/schemas/ProductReferenceObject"
+                 
+      responses:
+        200:
+          description: "Success Response"
+        404:
+          description: "Not Found"          
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SpecificationObject"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/SpecificationObject"
+      tags: ["Product"]
+  "/get-skus":
+    post:
+      operationId: fetchSkuList
+      requestBody:
+        content:
+          application/json:
+              schema:
+                $ref: "#/components/schemas/ProductReferenceObject"
+                 
+          application/xml:
+              schema:
+                $ref: "#/components/schemas/ProductReferenceObject"
+                 
+      responses:
+        200:
+          description: "Success Response"
+        404:
+          description: "Not Found"          
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SkuObject"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/SkuObject"
+      tags: ["Product"]  
+      
+components:
+  schemas:
+    StockUpdateObject:  
+      properties:
+        skuId:
+          type: string
+        stock:
+          type: integer
+          format: int64
+    ProductIdObject:  
+      properties:
+        vendorId:
+          type: string
+        categoryId:
+          type: integer
+          format: int64  
+        organizationId:
+          type: string
+        page:
+          type: integer
+        pageSize:
+          type: integer    
+    ProductReferenceObject:  
+      properties:
+        productReferenceId:
+          type: integer
+          format: int64
+        page:
+          type: integer
+        pageSize:
+          type: integer
+          
+    SpecificationObject:
+      properties:
+        specification:
+          type: array
+          items:
+            type: object
+            properties:
+              productSpecificationId:
+                type: integer
+                format: int64
+              specificationLabel:
+                type: string
+              specificationValues:
+                type: array
+                items:
+                 type: object
+                 properties: 
+                  specificationValueLabel: 
+                    type: string
+                  specificationValueId:
+                    type: integer
+                    format: int64
+        packageContent:
+                type: array
+                items:
+                 type: object
+                 properties:
+                  packageContentId:
+                    type: integer
+                    format: int64
+                  itemName:
+                    type: string               
+                  itemQuantity:
+                    type: string
+    SkuObject:
+      properties:
+        skus:
+          type: array
+          items:
+           type: object
+           properties:
+            productSkuId:
+              type: integer
+              format: int64
+            skuCreationName:
+              type: string
+            skuId:
+              type: string
+            variants:
+              type: array
+              items:
+               type: object
+               properties:
+                productVariantId:
+                  type: integer
+                  format: int64
+                variantName:
+                  type: string
+                variantValueId:
+                  type: integer
+                  format: int64  
+                variantValue:
+                  type: string  
+            sellerSkuId:
+              type: string
+            defaultSku:
+              type: string 
+            basePrice:
+              type: string
+            offerPrice:
+              type: string
+            cost:
+              type: string 
+            margin:
+              type: string 
+            stock:
+              type: integer
+              format: int64  
+            maximumOrderQuantity:
+              type: integer
+              format: int64  
+            minimumOrderQuantity:
+              type: integer
+              format: int64  
+            lowStockThreshold:
+              type: integer
+              format: int64  
+            publishingDate:
+              type: string
+            expiryDate:
+              type: string  
+            images:
+              type: array
+              items:
+               type: object
+               properties: 
+                imageId: 
+                  type: integer
+                  format: int64
+                imageURL:
+                  type: string
+      required:
+        - skuId
+    ProductListObject:
+      properties:
+        products:
+          type: array
+          items:
+           type: object
+           properties: 
+              productReferenceId:
+                type: integer
+                format: int64
+              categoryId:
+                type: integer
+                format: int64  
+              categoryName:
+                type: string
+              brandId:
+                type: integer
+                format: int64  
+              brandName:
+                type: string
+              productName:
+                type: object
+              productType:
+                type: string 
+              modelNumber:
+                type: string   
+              shortDescription:
+                type: object
+              longDescription:
+                type: object
+              createdDate:
+                type: string
+              modifiedDate:
+                type: string
+              userId:
+                type: integer
+                format: int64  
+              userName:
+                type: string
+                
+                
+                
+                
+                

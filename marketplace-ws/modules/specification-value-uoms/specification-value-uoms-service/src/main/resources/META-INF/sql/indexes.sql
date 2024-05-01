@@ -1,0 +1,1 @@
+create index IX_A9FEF21D on marketplace_specvalueuom (uuid_[$COLUMN_LENGTH:75$]);

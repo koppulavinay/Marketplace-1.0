@@ -1,0 +1,10 @@
+Bundle-Name: checkout-master-api
+Bundle-SymbolicName: com.marketplace.checkout.master.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.marketplace.checkout.master.exception,\
+	com.marketplace.checkout.master.model,\
+	com.marketplace.checkout.master.service,\
+	com.marketplace.checkout.master.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../checkout-master-service/service.xml

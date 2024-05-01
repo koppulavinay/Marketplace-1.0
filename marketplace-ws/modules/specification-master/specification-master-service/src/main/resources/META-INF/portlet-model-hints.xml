@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.marketplace.specification.master.model.Specification">
+		<field name="uuid" type="String" />
+		<field name="specificationId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="specificationLabel" type="String" />
+		<field name="specificationDescription" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field name="specificationFieldType" type="long" />
+		<field name="specificationFieldDataType" type="long" />
+		<field name="specificationPriority" type="long" />
+		<field name="isVariant" type="boolean" />
+		<field name="specificationGroupId" type="long" />
+		<field name="cpSpecificationId" type="long" />
+		<field name="specificationStatus" type="String" />
+		<field name="ipAddress" type="String" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="createdBy" type="long" />
+		<field name="modifiedBy" type="long" />
+	</model>
+</model-hints>

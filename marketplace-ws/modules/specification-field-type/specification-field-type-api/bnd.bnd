@@ -1,0 +1,10 @@
+Bundle-Name: specification-field-type-api
+Bundle-SymbolicName: com.marketplace.specification.field.type.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.marketplace.specification.field.type.exception,\
+	com.marketplace.specification.field.type.model,\
+	com.marketplace.specification.field.type.service,\
+	com.marketplace.specification.field.type.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../specification-field-type-service/service.xml

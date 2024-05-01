@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.4.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_4_0.dtd">
+
+<service-builder dependency-injector="ds" 
+	package-path="com.marketplace.brand.category.map">
+	<namespace>marketplace_brandcategorymap</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+	<entity local-service="true" name="BrandCategoryMap" table="marketplace_brandcategorymap"
+		remote-service="false" uuid="false">
+
+		<!-- PK fields -->
+
+		<column name="brandCategoryMapId" primary="true" type="long" />
+		<column name="brandId" type="long" />
+		<column name="categoryId" type="long" />
+		
+		<finder name="FBYBrandId" return-type="Collection">
+			<finder-column name="brandId"></finder-column>
+		</finder>
+
+	</entity>
+</service-builder>

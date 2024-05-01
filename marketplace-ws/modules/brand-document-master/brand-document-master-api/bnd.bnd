@@ -1,0 +1,10 @@
+Bundle-Name: brand-document-master-api
+Bundle-SymbolicName: com.marketplace.brand.document.master.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.marketplace.brand.document.master.exception,\
+	com.marketplace.brand.document.master.model,\
+	com.marketplace.brand.document.master.service,\
+	com.marketplace.brand.document.master.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../brand-document-master-service/service.xml

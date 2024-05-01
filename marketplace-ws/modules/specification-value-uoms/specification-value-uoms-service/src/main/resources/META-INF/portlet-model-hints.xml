@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.marketplace.specification.value.uoms.model.SpecValueUom">
+		<field name="uuid" type="String" />
+		<field name="specValueUomId" type="long" />
+		<field name="valueUomName" type="String" />
+	</model>
+</model-hints>

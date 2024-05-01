@@ -1,0 +1,1 @@
+create index IX_C54B41E9 on marketplace_specfieldtype (uuid_[$COLUMN_LENGTH:75$]);

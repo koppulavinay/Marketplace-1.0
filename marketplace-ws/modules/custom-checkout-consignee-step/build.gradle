@@ -1,0 +1,12 @@
+dependencies {
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+	
+	compile project(":modules:product-master:product-master-api")
+	compile project(":modules:brand-master:brand-master-api")
+	compile project(":modules:category-master:category-master-api")
+	compile project(":modules:checkout-consignee-details-master:checkout-consignee-details-master-api")
+	compile project(":modules:web-services-bridge")
+	compileOnly project(":modules:buycorp-common-util")
+
+	cssBuilder group: "com.liferay", name: "com.liferay.css.builder", version: "3.1.0"
+}

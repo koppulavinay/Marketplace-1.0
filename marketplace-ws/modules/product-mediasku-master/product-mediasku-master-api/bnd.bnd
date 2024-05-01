@@ -1,0 +1,10 @@
+Bundle-Name: product-mediasku-master-api
+Bundle-SymbolicName: com.marketplace.product.mediasku.master.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.marketplace.product.mediasku.master.exception,\
+	com.marketplace.product.mediasku.master.model,\
+	com.marketplace.product.mediasku.master.service,\
+	com.marketplace.product.mediasku.master.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../product-mediasku-master-service/service.xml

@@ -1,0 +1,9 @@
+apiDir: "../buycorp-specification-rest-api-api/src/main/java"
+apiPackagePath: "buycorp.specification.rest.api"
+application:
+    baseURI: "/buycorp-specification-rest-api"
+    className: "BuycorpSpecificationRestApiApplication"
+    name: "BuycorpSpecificationRestApi"
+author: "kashyap.mishra"
+clientDir: "../buycorp-specification-rest-api-client/src/main/java"
+testDir: "../buycorp-specification-rest-api-test/src/testIntegration/java"

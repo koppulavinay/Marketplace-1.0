@@ -1,0 +1,1 @@
+create index IX_EFE5C6A1 on marketplace_brandcategorymap (brandId);

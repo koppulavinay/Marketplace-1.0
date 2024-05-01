@@ -1,0 +1,4 @@
+Bundle-Name: buycorp-product-inventory-management
+Bundle-SymbolicName: com.marketplace.product.inventory.management
+Bundle-Version: 1.0.0
+Export-Package: com.marketplace.product.inventory.management.constants

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.marketplace.brand.model.Brand">
+		<field name="uuid" type="String" />
+		<field name="brandId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="assetCategoryId" type="long" />
+		<field name="brandCode" type="String" />
+		<field name="brandName" type="String" />
+		<field name="brandDescription" type="String" />
+		<field name="brandOwner" type="String" />
+		<field name="brandReviewer" type="long" />
+		<field name="brandType" type="String" />
+		<field name="externalReferenceId" type="String" />
+		<field name="brandApprovalStatus" type="String" />
+		<field name="reviewerRemarks" type="String" />
+		<field name="brandInactive" type="Boolean" />
+		<field name="brandImageUpload" type="long" />
+		<field name="brandImageURL" type="String" />
+		<field name="managerRemarks" type="String" />
+		<field name="customAtr1" type="String" />
+		<field name="customAtr2" type="String" />
+		<field name="customAtr3" type="String" />
+		<field name="customAtr4" type="String" />
+		<field name="customAtr5" type="String" />
+		<field name="customAtr6" type="String" />
+		<field name="customAtr7" type="String" />
+		<field name="customAtr8" type="String" />
+		<field name="customAtr9" type="String" />
+		<field name="customAtr10" type="String" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="createdBy" type="long" />
+		<field name="modifiedBy" type="long" />
+		<field name="ipAddress" type="String" />
+		<field name="isActive" type="Boolean" />
+		<field name="downForSeller" type="Boolean" />
+		<field name="downForBuyer" type="Boolean" />
+		<field name="downForMaintenance" type="Boolean" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="status" type="int" />
+		<field name="statusByUserId" type="long" />
+		<field name="statusByUserName" type="String" />
+		<field name="statusDate" type="Date" />
+	</model>
+</model-hints>

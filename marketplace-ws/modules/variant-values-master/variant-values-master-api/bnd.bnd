@@ -1,0 +1,10 @@
+Bundle-Name: variant-values-master-api
+Bundle-SymbolicName: com.marketplace.variant.values.master.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.marketplace.variant.values.master.exception,\
+	com.marketplace.variant.values.master.model,\
+	com.marketplace.variant.values.master.service,\
+	com.marketplace.variant.values.master.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../variant-values-master-service/service.xml

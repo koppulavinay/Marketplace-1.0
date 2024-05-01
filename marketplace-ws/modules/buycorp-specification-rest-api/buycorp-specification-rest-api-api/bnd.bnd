@@ -1,0 +1,6 @@
+Bundle-Name: buycorp-specification-rest-api-api
+Bundle-SymbolicName: buycorp.specification.rest.api.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	buycorp.specification.rest.api.dto.v1_0,\
+	buycorp.specification.rest.api.resource.v1_0

@@ -1,0 +1,5 @@
+Bundle-Name: brand-view
+Bundle-SymbolicName: com.marketplace.brand.view
+Bundle-Version: 1.0.0
+Export-Package: com.marketplace.brand.constants
+Web-ContextPath: /brand-view

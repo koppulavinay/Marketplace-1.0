@@ -1,0 +1,8 @@
+Bundle-Name: buycorp-listing-detail
+Bundle-SymbolicName: com.marketplace.product.listing.detail
+Bundle-Version: 1.0.0
+Import-Package:\
+!com.liferay.commerce.account.*,\
+*
+
+Web-ContextPath: /buycorp-listing-detail
